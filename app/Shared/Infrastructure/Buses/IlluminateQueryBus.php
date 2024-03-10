@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Shared\Infrastructure\Buses;
 
-use App\Shared\Domain\Queries\Query;
-use App\Shared\Domain\Queries\QueryBus;
-use App\Shared\Domain\Queries\QueryResult;
+use App\Shared\Application\Queries\Query;
+use App\Shared\Application\Queries\QueryBus;
+use App\Shared\Application\Queries\QueryResult;
 
 class IlluminateQueryBus extends IlluminateBus implements QueryBus
 {

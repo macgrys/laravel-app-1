@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace App\Shared\Infrastructure\Providers;
 
+use App\Account\Application\CommandHandlers\AccountCreateCommandHandler;
 use App\Account\Application\CommandHandlers\AccountVerifyCommandHandler;
 use App\Account\Application\Commands\AccountCreateCommand;
-use App\Account\Application\CommandHandlers\AccountCreateCommandHandler;
 use App\Account\Application\Commands\AccountVerifyCommand;
 use App\Account\Application\Query\AccountLoginQuery;
 use App\Account\Application\QueryHandler\AccountLoginQueryHandler;
-use App\Shared\Domain\Commands\CommandBus;
-use App\Shared\Domain\Queries\QueryBus;
+use App\Shared\Application\Commands\CommandBus;
+use App\Shared\Application\Queries\QueryBus;
 use App\Shared\Infrastructure\Buses\IlluminateCommandBus;
 use App\Shared\Infrastructure\Buses\IlluminateQueryBus;
 use Illuminate\Bus\BusServiceProvider;

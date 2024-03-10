@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Account\Application\QueryResult;
 
-use App\Shared\Domain\Queries\QueryResult;
+use App\Shared\Application\Queries\QueryResult;
 
 final readonly class AccountLoginQueryResult implements QueryResult
 {

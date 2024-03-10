@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Account\Application\Commands;
 
-use App\Shared\Domain\Commands\Command;
+use App\Shared\Application\Commands\Command;
 
 final readonly class AccountCreateCommand implements Command
 {

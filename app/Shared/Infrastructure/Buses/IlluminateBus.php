@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Shared\Infrastructure\Buses;
 
-use App\Shared\Domain\Queries\QueryResult;
+use App\Shared\Application\Queries\QueryResult;
 use Illuminate\Bus\Dispatcher;
 
 abstract class IlluminateBus

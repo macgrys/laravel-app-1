@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Shared\Domain\Services;
+namespace App\Shared\Application\Services;
 
 use App\Shared\Domain\Models\ValueObjects\Id;
 

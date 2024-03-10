@@ -7,7 +7,7 @@ namespace App\Account\Application\QueryHandler;
 use App\Account\Application\Query\AccountLoginQuery;
 use App\Account\Application\QueryResult\AccountLoginQueryResult;
 use App\Account\Domain\Repositories\AccountRepositoryInterface;
-use App\Shared\Domain\Queries\QueryHandler;
+use App\Shared\Application\Queries\QueryHandler;
 
 class AccountLoginQueryHandler implements QueryHandler
 {

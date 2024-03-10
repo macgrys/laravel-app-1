@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Shared\Infrastructure\Providers;
 
-use App\Shared\Domain\Services\IdGeneratorServiceInterface;
+use App\Shared\Application\Services\IdGeneratorServiceInterface;
 use App\Shared\Infrastructure\Services\IdGeneratorService;
 use Illuminate\Support\ServiceProvider;
 

@@ -7,7 +7,7 @@ namespace App\Shared\Infrastructure\Services;
 use App\Shared\Domain\Models\ValueObjects\Id;
 use Ramsey\Uuid\Uuid;
 
-class IdGeneratorService implements \App\Shared\Domain\Services\IdGeneratorServiceInterface
+class IdGeneratorService implements \App\Shared\Application\Services\IdGeneratorServiceInterface
 {
     public function generate(): Id
     {

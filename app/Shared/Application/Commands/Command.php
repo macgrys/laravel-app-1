@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Shared\Domain\Commands;
+namespace App\Shared\Application\Commands;
 
 interface Command
 {

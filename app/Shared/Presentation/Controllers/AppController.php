@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace App\Shared\Presentation\Controllers;
 
-use App\Shared\Domain\Commands\Command;
-use App\Shared\Domain\Commands\CommandBus;
-use App\Shared\Domain\Queries\Query;
-use App\Shared\Domain\Queries\QueryBus;
-use App\Shared\Domain\Queries\QueryResult;
+use App\Shared\Application\Commands\Command;
+use App\Shared\Application\Commands\CommandBus;
+use App\Shared\Application\Queries\Query;
+use App\Shared\Application\Queries\QueryBus;
+use App\Shared\Application\Queries\QueryResult;
 use Illuminate\Routing\Controller;
 
 abstract class AppController extends Controller

@@ -6,9 +6,9 @@ namespace App\Account\Application\CommandHandlers;
 
 use App\Account\Application\Commands\AccountVerifyCommand;
 use App\Account\Domain\Repositories\AccountRepositoryInterface;
-use App\Shared\Domain\Commands\CommandHandler;
+use App\Shared\Application\Commands\CommandHandler;
+use App\Shared\Application\Services\IdGeneratorServiceInterface;
 use App\Shared\Domain\Models\ValueObjects\Id;
-use App\Shared\Domain\Services\IdGeneratorServiceInterface;
 
 class AccountVerifyCommandHandler implements CommandHandler
 {

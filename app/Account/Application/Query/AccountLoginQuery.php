@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Account\Application\Query;
 
-use App\Shared\Domain\Queries\Query;
+use App\Shared\Application\Queries\Query;
 use App\Shared\Domain\Services\PasswordValidatorServiceInterface;
 
 final readonly class AccountLoginQuery implements Query

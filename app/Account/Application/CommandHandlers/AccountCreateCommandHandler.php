@@ -9,8 +9,8 @@ use App\Account\Domain\Models\Account;
 use App\Account\Domain\Models\ValueObjects\AccountLogging;
 use App\Account\Domain\Models\ValueObjects\AccountVerification;
 use App\Account\Domain\Repositories\AccountRepositoryInterface;
-use App\Shared\Domain\Commands\CommandHandler;
-use App\Shared\Domain\Services\IdGeneratorServiceInterface;
+use App\Shared\Application\Commands\CommandHandler;
+use App\Shared\Application\Services\IdGeneratorServiceInterface;
 
 class AccountCreateCommandHandler implements CommandHandler
 {
