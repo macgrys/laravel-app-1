@@ -1,0 +1,36 @@
+version: "3"
+services:
+    http:
+        image: nginx:alpine
+        ports:
+            - "8080:80"
+        volumes:
+            - ./:/var/www/html
+            - ./nginx/:/etc/nginx/conf.d/
+        depends_on:
+            - php
+    php:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - .:/var/www/html
+    db:
+        image: mysql:latest
+        environment:
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+            MYSQL_USER: 'admin'
+            MYSQL_PASS: 'admin'
+        ports:
+            - "3306:3306"
+        volumes:
+            - db:/var/lib/mysql
+
+    rabbitmq:
+        image: rabbitmq:3.9-management
+        ports:
+            - "5672:5672"
+            - "15672:15672"
+
+volumes:
+    db:
